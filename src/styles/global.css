@@ -129,35 +129,63 @@ section {
   font-size: 13px;
 }
 
-/* ---------- Skills Section ---------- */
+/* Skills Section */
+section#skills {
+  text-align: center;
+  padding: 80px 8%;
+}
+
 .skills-row {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center horizontally */
   gap: 16px;
-  overflow-x: auto;
-  padding: 20px 0;
-  justify-content: center;
+  margin-top: 30px;
 }
 
 .skill-pill {
-  padding: 10px 22px;
+  padding: 12px 25px;
   background: #1e293b;
   border-radius: 30px;
   white-space: nowrap;
   font-size: 14px;
   cursor: default;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  opacity: 0.9;
 }
 
+/* Hover animation */
 .skill-pill:hover {
   background: #6366f1;
+  transform: translateY(-5px) scale(1.05);
+  opacity: 1;
 }
 
-/* Projects Section */
+/* Floating AOS animation for all pills */
+.skill-pill[data-aos="zoom-in"] {
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.skill-pill[data-aos].aos-animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skill-pill {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+}
+
+
 section#projects {
   text-align: center;
   width: 100%;
   padding: 80px 8%;
-  overflow: hidden; /* keep container clean */
+  box-sizing: border-box;
 }
 
 .section-title {
@@ -165,34 +193,13 @@ section#projects {
   margin-bottom: 50px;
 }
 
-/* Horizontal scroll gallery */
-.projects-gallery {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding-bottom: 20px;
-  scroll-behavior: smooth;
-  flex-wrap: nowrap; /* crucial for horizontal scroll */
-  width: 100%;
-}
-
-/* Ensure scroll works even on mobile */
-.projects-gallery::-webkit-scrollbar {
-  display: none;
-}
-.projects-gallery {
-  -ms-overflow-style: none;  /* IE/Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-/* Each project card */
 .project-card {
-  flex: 0 0 auto; /* important: auto width based on content */
-  width: 300px;   /* fixed width for horizontal scroll */
   background: #1e293b;
   border-radius: 15px;
   padding: 20px;
   text-align: left;
+  box-sizing: border-box; /* important */
+  width: 100%; /* allow Swiper to control width */
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -236,6 +243,16 @@ section#projects {
   background: #4f46e5;
 }
 
+/* Responsive Cards */
+@media (max-width: 1024px) {
+  .project-card { padding: 18px; }
+}
+
+@media (max-width: 768px) {
+  .project-card { padding: 15px; }
+}
+
+
 /* Responsive */
 @media (max-width: 1024px) {
   .project-card { width: 260px; }
@@ -243,7 +260,7 @@ section#projects {
 
 @media (max-width: 768px) {
   .projects-gallery { gap: 15px; padding-bottom: 15px; }
-  .project-card { width: 220px; padding: 15px; }
+  .project-card {  padding: 15px; }
 }
 
 

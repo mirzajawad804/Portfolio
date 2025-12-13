@@ -1,17 +1,24 @@
 import React from "react";
 import "../styles/global.css";
+
 function Skills() {
+  const skills = ["HTML", "CSS", "JavaScript", "React", "Git", "GitHub", "Node.js", "Bootstrap"];
+
   return (
     <section id="skills" data-aos="fade-up">
-      <h2>Skills</h2>
+      <h2 className="section-title">Skills</h2>
 
       <div className="skills-row">
-        <span className="skill-pill">HTML</span>
-        <span className="skill-pill">CSS</span>
-        <span className="skill-pill">JavaScript</span>
-        <span className="skill-pill">React</span>
-        <span className="skill-pill">Git</span>
-        <span className="skill-pill">GitHub</span>
+        {skills.map((skill, index) => (
+          <span
+            key={index}
+            className="skill-pill"
+            data-aos="zoom-in"
+            data-aos-delay={index * 100} // stagger effect
+          >
+            {skill}
+          </span>
+        ))}
       </div>
     </section>
   );

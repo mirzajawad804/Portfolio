@@ -1,0 +1,17 @@
+.floating-text {
+  animation: floatText 3s ease-in-out infinite;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+@keyframes floatText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -32,7 +32,8 @@ function Navbar() {
   return (
     <>
       <nav className="navbar" data-aos="fade-down">
-        <h3>Jawad.</h3>
+      <h3 className="brand-name">Jawad.</h3>
+
 
         {/* Desktop Links */}
         {windowWidth > 600 ? (

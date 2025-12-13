@@ -21,7 +21,7 @@ section {
 
 
 
-/* ---------- Hero Section ---------- */
+/* Hero Section */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -159,7 +159,7 @@ section {
   }
 }
 
-/* ---------- About Section ---------- */
+/* About Section */
 section#about {
   text-align: center;
   padding: 80px 8%;
@@ -269,7 +269,7 @@ section#skills {
   opacity: 1;
 }
 
-/* Floating AOS animation for all pills */
+/*  AOS animation for all pills */
 .skill-pill[data-aos="zoom-in"] {
   opacity: 0;
   transform: scale(0.7);
@@ -307,7 +307,7 @@ section#projects {
   padding: 20px;
   text-align: left;
   box-sizing: border-box; /* important */
-  width: 100%; /* allow Swiper to control width */
+  width: 100%;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -351,7 +351,7 @@ section#projects {
   background: #4f46e5;
 }
 
-/* Responsive Cards */
+/*  Cards */
 @media (max-width: 1024px) {
   .project-card { padding: 18px; }
 }
@@ -372,7 +372,7 @@ section#projects {
 }
 
 
-/* ---------- Contact Section ---------- */
+/* Contact Section */
 .contact {
   background: #020617;
   text-align: center;
@@ -396,8 +396,7 @@ section#projects {
 .contact-btn:hover {
   background: #4f46e5;
 }
-
-/* ---------- Footer ---------- */
+/* Footer */
 .footer {
   padding: 30px 8%;
   display: flex;
@@ -406,43 +405,51 @@ section#projects {
   font-size: 13px;
   border-top: 1px solid #1e293b;
   flex-wrap: wrap;
+  background: #0f172a;
 }
 
-.footer a {
+.footer p {
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
   color: #e5e7eb;
-  margin-left: 20px;
-  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   text-decoration: none;
-  transition: 0.3s;
+  opacity: 0.7;
+  transition: all 0.3s;
 }
 
-.footer a:hover {
+.footer-links a:hover {
   opacity: 1;
+  transform: translateY(-3px);
+  color: #6366f1;
 }
 
-/* ---------- Animations ---------- */
+/* Animations */
+.footer {
+  animation: fadeUp 1s ease forwards;
+}
+
+/* fadeUp keyframes already defined */
 @keyframes fadeUp {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 1024px) {
-  .hero h1 { font-size: 2.5rem; }
-  .project-card { flex-direction: column; align-items: center; }
-  .project-card img { width: 100%; max-width: 300px; }
-}
-
+/* Responsive Footer */
 @media (max-width: 768px) {
-  .navbar ul { gap: 15px; }
-  .hero h1 { font-size: 2rem; }
-  .hero .subtitle { font-size: 14px; }
-  section { padding: 80px 6%; }
-}
-
-@media (max-width: 480px) {
-  .hero h1 { font-size: 1.8rem; }
-  .hero button { padding: 10px 20px; }
-  .skill-pill { padding: 8px 16px; font-size: 12px; }
-  .about-info span { font-size: 11px; padding: 6px 12px; }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
 }

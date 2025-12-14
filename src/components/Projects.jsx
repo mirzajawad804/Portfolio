@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import projectsData from "../data/projectsData";
+
 import "../styles/global.css";
 
 function Projects() {

@@ -1,40 +1,48 @@
-import ageCalculator from "../assets/images/project-img/age-calculator-app.jpg";
-import calculatorApp from "../assets/images/project-img/Calculator-app.jpg";
-import contactForm from "../assets/images/project-img/contact-form.jpg";
-import interactiveCard from "../assets/images/project-img/Interactive-card-details-form.jpg";
+import project1 from "../assets/images/project-img/project1.png";
+import project2 from "../assets/images/project-img/project2.png";
+import project3 from "../assets/images/project-img/project3.png";
+import project4 from "../assets/images/project-img/project4.png";
+import project5 from "../assets/images/project-img/project5.png";
 
 const projectsData = [
   {
     id: 1,
-    title: "Project One",
-    description: "This is a sample project description.",
-    image: ageCalculator,
-    liveDemo: "#",
-    code: "#"
+    title: "Huddle landing page ",
+    image: project1,
+    liveDemo: "https://mirzajawad804.github.io/Huddle-landing-page-with-a-single-introductory-section/",
+    code: "https://github.com/mirzajawad804/Huddle-landing-page-with-a-single-introductory-section/"
   },
   {
     id: 2,
-    title: "Project Two",
-    description: "Another project placeholder.",
-    image: calculatorApp,
+    title: "Profile card component",
+
+    image: project2,
     liveDemo: "#",
-    code: "#"
+    code: "https://github.com/mirzajawad804/Profile-card-component/"
   },
   {
     id: 3,
-    title: "Project Three",
-    description: "Sample text.",
-    image: contactForm,
-    liveDemo: "#",
-    code: "#"
+    title: "Stats-preview-card-component",
+
+    image: project3,
+    liveDemo: "https://mirzajawad804.github.io/Stats-preview-card-component/",
+    code: "https://github.com/mirzajawad804/Stats-preview-card-component"
   },
   {
     id: 4,
-    title: "Interactive Card",
-    description: "Sample text.",
-    image: interactiveCard,
-    liveDemo: "#",
-    code: "#"
+    title: "Social links profile",
+  
+    image: project4,
+    liveDemo: "https://mirzajawad804.github.io/Social-links-profile/",
+    code: "https://github.com/mirzajawad804/Social-links-profile/"
+  },
+  {
+    id: 5,
+    title: "Order summary component",
+
+    image: project5,
+    liveDemo: "https://mirzajawad804.github.io/Order-summary-component/",
+    code: "https://github.com/mirzajawad804/Order-summary-component/"
   }
 ];
 

@@ -10,7 +10,7 @@ function Hero() {
           <p className="floating-text">Frontend Developer</p>
           <h1>Mirza Jawad</h1>
           <p className="subtitle" data-aos="fade-up" data-aos-delay="200">
-            I create clean web apps and learn new tech every day.
+          Hi! I’m **Mirza Muhammad Jawad Ali Kazmi**, a 14-year-old aspiring web developer. I’m passionate about coding and inspired by the world of web development.
           </p>
           <button
             data-aos="zoom-in"

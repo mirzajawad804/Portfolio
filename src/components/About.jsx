@@ -14,9 +14,14 @@ function About() {
 
         <div className="about-content" data-aos="fade-left">
           <p className="about-text">
-            I am a passionate learner of web development. I love creating modern and
-            responsive websites. Currently learning React and improving my
-            JavaScript skills.
+            Hi! I’m Mirza Muhammad Jawad Ali Kazmi, a 14-year-old aspiring web
+            developer. I’m passionate about coding and love creating websites
+            and interactive applications. I’m skilled in HTML, CSS, and
+            JavaScript, and I’m exploring React to make dynamic, user-friendly
+            web experiences. I enjoy learning by building real projects and
+            experimenting with new ideas. My goal is to grow as a web developer,
+            work on meaningful projects, and continue improving my skills while
+            having fun in the process.
           </p>
 
           <div className="about-info">

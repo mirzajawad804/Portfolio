@@ -1,4 +1,4 @@
-/* ---------- Navbar ---------- */
+/*  Navbar  */
 .navbar {
   position: fixed;
   top: 0;
@@ -96,7 +96,7 @@
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px; /* hidden on left */
+  left: -250px;
   width: 220px;
   height: 100%;
   background: #1e293b;
@@ -104,11 +104,11 @@
   flex-direction: column;
   padding: 60px 20px;
   gap: 25px;
-  transition: left 0.3s ease; /* slide from left */
+  transition: left 0.3s ease;
 }
 
 .sidebar-overlay.active .sidebar {
-  left: 0; /* slide in */
+  left: 0; 
 }
 
 .sidebar ul {
@@ -128,7 +128,7 @@
 
 .sidebar a:hover {
   color: #6366f1;
-  transform: translateX(5px); /* slight slide right on hover */
+  transform: translateX(5px); 
 }
 
 /* Hide desktop links on mobile */

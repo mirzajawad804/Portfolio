@@ -307,7 +307,7 @@ section#projects {
   font-size: 2.5rem;
   margin-bottom: 50px;
 }
-/* ---------- Project Card ---------- */
+/*  Project Card  */
 .project-card {
   width: 100%;
   max-width: 300px;       /* max width for desktop */
@@ -379,7 +379,7 @@ section#projects {
   background: #4f46e5;
 }
 
-/* ---------- Tablet ---------- */
+/*  Tablet  */
 @media (max-width: 1024px) {
   .project-card {
     max-width: 260px;
@@ -400,7 +400,7 @@ section#projects {
   }
 }
 
-/* ---------- Mobile ---------- */
+/*  Mobile  */
 @media (max-width: 768px) {
   .project-card {
     max-width: 220px;
@@ -422,7 +422,7 @@ section#projects {
   }
 }
 
-/* ---------- Extra Small Screens ---------- */
+/*  Extra Small Screens  */
 @media (max-width: 480px) {
   .project-card {
     max-width: 180px;

@@ -8,7 +8,7 @@ function Footer() {
       <p>© 2025 Mirza Jawad. Built with React.</p>
 
       <div className="footer-links">
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/mirzajawad804" target="_blank" rel="noopener noreferrer">
           <FaGithub /> GitHub
         </a>
         <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">

@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/global.css";
-import aboutImg from "../assets/images/about-me.jpg"; // apni image path yahan dal do
+import aboutImg from "../assets/images/about-me.jpg"; 
 
 function About() {
   return (

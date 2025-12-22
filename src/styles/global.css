@@ -72,13 +72,18 @@ section {
 .hero-text button:hover {
   background: #4f46e5;
 }
-
 /* Hero image */
 .hero-image .hero-img {
   width: 250px;
+  height: 250px; 
   border-radius: 50%;
   border: 4px solid #6366f1;
-  transition: transform 0.5s, box-shadow 0.5s;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  transition: transform 0.5s ease, box-shadow 0.5s ease; 
+  display: block; 
+  margin: 0 auto; 
 }
 
 .hero-image .hero-img:hover {
